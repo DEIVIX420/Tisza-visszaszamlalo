@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Választás Visszaszámláló</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="icon.png"> <!-- Készíts egy 192x192 px ikont -->
+    <!-- Cookie Consent (GDPR) -->
+    <script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-domain-script="YOUR_SCRIPT_ID"></script> <!-- Cseréld ki a saját OneTrust ID-dre -->
+    <script type="text/javascript">function OptanonWrapper() { }</script>
+</head>
+<body>
+    <div class="container">
+        <h1>Visszaszámláló a 2026-os magyar parlamenti választásig</h1>
+        <div id="countdown">
+            <div class="time"><span id="days">0</span> Nap</div>
+            <div class="time"><span id="hours">0</span> Óra</div>
+            <div class="time"><span id="minutes">0</span> Perc</div>
+            <div class="time"><span id="seconds">0</span> Másodperc</div>
+        </div>
+        <div class="ads">
+            <h2>Reklámok baloldali hírportálokról</h2>
+            <!-- Placeholder-ek: Cseréld ki jogszerű affiliate linkekre vagy banner-ekre -->
+            <a href="https://telex.hu/affiliate-partner" target="_blank"><img src="placeholder-telex-banner.jpg" alt="Telex Reklám" class="ad-banner"></a>
+            <a href="https://444.hu/affiliate-partner" target="_blank"><img src="placeholder-444-banner.jpg" alt="444 Reklám" class="ad-banner"></a>
+            <a href="https://24.hu/affiliate-partner" target="_blank"><img src="placeholder-24hu-banner.jpg" alt="24.hu Reklám" class="ad-banner"></a>
+            <!-- Adj hozzá többet, pl. HVG, Népszava – de csak engedélyezett tartalmakat -->
+        </div>
+        <footer>
+            <p>Adatvédelmi nyilatkozat: Nem gyűjtünk személyes adatokat. Reklámok third-party szolgáltatóktól származnak. <a href="privacy.html">További info</a>.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+    <!-- Service Worker a PWA-hoz -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/sw.js');
+        }
+    </script>
+</body>
+</html>
